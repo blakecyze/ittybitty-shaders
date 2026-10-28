@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diamond · ittybitty</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; }
+    canvas { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- A cut gem turning in studio light, throwing rainbow fire and star-shaped glints. Try every control at https://ittybitty.dev/shaders/diamond -->
+  <canvas></canvas>
+  <script type="module">
+    import { diamond } from '../shaders/diamond.js';
+    diamond(document.querySelector('canvas'));
+  </script>
+</body>
+</html>

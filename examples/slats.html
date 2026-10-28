@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slats · ittybitty</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; }
+    canvas { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- Light falling across long diagonal slats, fading into grain at their ends. Try every control at https://ittybitty.dev/shaders/slats -->
+  <canvas></canvas>
+  <script type="module">
+    import { slats } from '../shaders/slats.js';
+    slats(document.querySelector('canvas'));
+  </script>
+</body>
+</html>

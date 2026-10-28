@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rays · ittybitty</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; }
+    canvas { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- Soft shafts of light from a single source, like sun through a high window. Try every control at https://ittybitty.dev/shaders/rays -->
+  <canvas></canvas>
+  <script type="module">
+    import { rays } from '../shaders/rays.js';
+    rays(document.querySelector('canvas'));
+  </script>
+</body>
+</html>

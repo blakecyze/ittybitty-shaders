@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glow · ittybitty</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; }
+    canvas { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- Two soft lights drifting behind cards, product shots and pricing tables. Try every control at https://ittybitty.dev/shaders/glow -->
+  <canvas></canvas>
+  <script type="module">
+    import { glow } from '../shaders/glow.js';
+    glow(document.querySelector('canvas'));
+  </script>
+</body>
+</html>

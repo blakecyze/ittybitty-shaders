@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mesh Gradient · ittybitty</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; }
+    canvas { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- Four colours folding into one another, finished with fine grain. Try every control at https://ittybitty.dev/shaders/mesh -->
+  <canvas></canvas>
+  <script type="module">
+    import { mesh } from '../shaders/mesh.js';
+    mesh(document.querySelector('canvas'));
+  </script>
+</body>
+</html>

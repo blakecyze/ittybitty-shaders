@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dither Image · ittybitty</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; }
+    canvas { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- Any image, redrawn in a few tones of ordered dither. Try every control at https://ittybitty.dev/shaders/dither-image -->
+  <canvas></canvas>
+  <script type="module">
+    import { ditherImage } from '../shaders/dither-image.js';
+    ditherImage(document.querySelector('canvas'));
+  </script>
+</body>
+</html>

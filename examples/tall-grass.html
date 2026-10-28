@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tall Grass · ittybitty</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; }
+    canvas { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- A meadow of tall grass with the wind rolling through it, realistic, cartoon or pixel. Try every control at https://ittybitty.dev/shaders/tall-grass -->
+  <canvas></canvas>
+  <script type="module">
+    import { tallGrass } from '../shaders/tall-grass.js';
+    tallGrass(document.querySelector('canvas'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heatmap · ittybitty</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; }
+    canvas { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- A word or a photo seen through a thermal camera, radiating and shimmering. Try every control at https://ittybitty.dev/shaders/heatmap -->
+  <canvas></canvas>
+  <script type="module">
+    import { heatmap } from '../shaders/heatmap.js';
+    heatmap(document.querySelector('canvas'));
+  </script>
+</body>
+</html>

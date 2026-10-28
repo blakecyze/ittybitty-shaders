@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water Surface · ittybitty</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; }
+    canvas { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- Open water from above, mirroring the sky or your image, rippled by wind and rain. Try every control at https://ittybitty.dev/shaders/surface -->
+  <canvas></canvas>
+  <script type="module">
+    import { surface } from '../shaders/surface.js';
+    surface(document.querySelector('canvas'));
+  </script>
+</body>
+</html>

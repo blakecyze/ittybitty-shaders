@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bubbly Clouds · ittybitty</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; }
+    canvas { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- Puffy cartoon clouds in a bright blue sky, drifting past, receding, or flying through. Try every control at https://ittybitty.dev/shaders/bubbly-clouds -->
+  <canvas></canvas>
+  <script type="module">
+    import { bubblyClouds } from '../shaders/bubbly-clouds.js';
+    bubblyClouds(document.querySelector('canvas'));
+  </script>
+</body>
+</html>
