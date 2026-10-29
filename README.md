@@ -24,6 +24,12 @@ If you'd rather stay in HTML, put `ittybitty-shader.js` in the same folder and u
 <ittybitty-shader effect="aurora" intensity="1.4"></ittybitty-shader>
 ```
 
+No build step? jsDelivr serves every release straight from this repo, and the imports resolve on their own:
+
+```js
+import { aurora } from 'https://cdn.jsdelivr.net/gh/blakecyze/ittybitty-shaders@v2026.10.28/shaders/aurora.js';
+```
+
 There's a bare page for each shader in [`examples/`](examples). Browsers won't load ES modules from a `file://` address, so open them through a local server (`npx serve` is enough).
 
 ## Shaders
