@@ -1,0 +1,16 @@
+name: Request a shader
+description: An effect you'd like to see in the collection.
+labels: [request]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Describe the effect
+      description: Link a reference if you have one. Every shader here is written from scratch, so a reference is for the look, not the code.
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: Where would you use it?
+      description: A hero, a card, a button, a loading state? It decides how cheap it has to be.

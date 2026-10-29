@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Try the shaders live
+    url: https://ittybitty.dev
+    about: Every shader with all its controls, before you file anything.

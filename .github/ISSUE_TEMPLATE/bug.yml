@@ -1,0 +1,104 @@
+name: Something's broken
+description: A shader looks wrong, errors, or runs slowly.
+labels: [bug]
+body:
+  - type: dropdown
+    id: shader
+    attributes:
+      label: Which shader?
+      options:
+        - Swoosh
+        - Edge Glow
+        - Drop Ripple
+        - Decode
+        - Rainbow
+        - North Star
+        - Spectrum
+        - Mesh Gradient
+        - Ocean
+        - Lagoon
+        - Liquid Metal
+        - Ferrofluid
+        - Lake
+        - Pool
+        - Water Surface
+        - Rain
+        - Clouds
+        - Bubbly Clouds
+        - Aurora
+        - Cells
+        - Bokeh
+        - Pebbles
+        - Sakura
+        - Fire
+        - Dissolve
+        - Koi Pond
+        - Sumi-e Mountains
+        - Wagara
+        - Tall Grass
+        - Meadow
+        - Stained Glass
+        - Black Hole
+        - Nebula
+        - Force Field
+        - Hologram
+        - Holo Card
+        - Condensation
+        - Watercolour
+        - Toon Ink
+        - Crosshatch
+        - Graphite
+        - Engraving
+        - Paper
+        - Page Curl
+        - Torn Paper
+        - Papercut
+        - CRT
+        - Orb
+        - Diamond
+        - Liquid Glass
+        - Dither
+        - Dither Image
+        - Silk
+        - Folds
+        - Slats
+        - Rays
+        - Metaballs
+        - Coral
+        - Iridescence
+        - Dot Field
+        - Warp Tunnel
+        - Ink
+        - Fluted Glass
+        - Electric Border
+        - Halftone
+        - Topography
+        - Heatmap
+        - Gradient Map
+        - Glow
+        - Dither Light
+        - Dither Haze
+        - Grain
+        - The runtime or the element
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you expected, what you got instead, and a screenshot if it's visual.
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Browser, OS and device
+      placeholder: Safari 26 on an iPhone 16
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Release
+      description: The tag you're using. Leave blank if you copied the files from main.
+      placeholder: v2026.10.28
