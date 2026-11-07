@@ -1,3 +1,3 @@
-The first public release, with 72 shaders.
+**New** · Afterimage
 
 Try them live at https://ittybitty.dev

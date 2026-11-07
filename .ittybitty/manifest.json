@@ -1,10 +1,12 @@
 {
-  "version": "v2026.10.28",
-  "latest": "first release",
+  "version": "v2026.11.07",
+  "latest": "Afterimage added",
   "releases": [
-    "v2026.10.28"
+    "v2026.10.28",
+    "v2026.11.07"
   ],
   "files": {
+    "shaders/afterimage.js": "786a1eefbc6012c8",
     "shaders/aurora.js": "d45a70798b60b358",
     "shaders/black-hole.js": "116cea2022be7766",
     "shaders/bokeh.js": "0c10106052ff04a2",
