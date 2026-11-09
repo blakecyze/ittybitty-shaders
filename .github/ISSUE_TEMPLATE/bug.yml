@@ -76,6 +76,7 @@ body:
         - Heatmap
         - Gradient Map
         - Afterimage
+        - Dusk
         - Glow
         - Dither Light
         - Dither Haze
@@ -102,4 +103,4 @@ body:
     attributes:
       label: Release
       description: The tag you're using. Leave blank if you copied the files from main.
-      placeholder: v2026.11.07
+      placeholder: v2026.11.09

@@ -1,6 +1,6 @@
 # ittybitty shaders
 
-73 WebGL2 shaders I wrote from scratch for [ittybitty.dev](https://ittybitty.dev). Each one is a single ES module with no dependencies. They share a small runtime that stops drawing when the canvas scrolls offscreen or the tab goes to the background, caps the pixel ratio, and shows a still frame to anyone who has asked their system for reduced motion.
+74 WebGL2 shaders I wrote from scratch for [ittybitty.dev](https://ittybitty.dev). Each one is a single ES module with no dependencies. They share a small runtime that stops drawing when the canvas scrolls offscreen or the tab goes to the background, caps the pixel ratio, and shows a still frame to anyone who has asked their system for reduced motion.
 
 You can play with every one of them, controls and all, at **[ittybitty.dev](https://ittybitty.dev)**.
 
@@ -27,7 +27,7 @@ If you'd rather stay in HTML, put `ittybitty-shader.js` in the same folder and u
 No build step? jsDelivr serves every release straight from this repo, and the imports resolve on their own:
 
 ```js
-import { aurora } from 'https://cdn.jsdelivr.net/gh/blakecyze/ittybitty-shaders@v2026.11.07/shaders/aurora.js';
+import { aurora } from 'https://cdn.jsdelivr.net/gh/blakecyze/ittybitty-shaders@v2026.11.09/shaders/aurora.js';
 ```
 
 There's a bare page for each shader in [`examples/`](examples). Browsers won't load ES modules from a `file://` address, so open them through a local server (`npx serve` is enough).
@@ -105,6 +105,7 @@ There's a bare page for each shader in [`examples/`](examples). Browsers won't l
 | <a href="https://ittybitty.dev/shaders/heatmap"><img src="https://ittybitty.dev/og/heatmap.jpg" width="240" alt="Heatmap"></a> | **[Heatmap](https://ittybitty.dev/shaders/heatmap)**<br>A word or a photo seen through a thermal camera, radiating and shimmering.<br>[`heatmap.js`](shaders/heatmap.js) · [example](examples/heatmap.html) |
 | <a href="https://ittybitty.dev/shaders/gradient-map"><img src="https://ittybitty.dev/og/gradient-map.jpg" width="240" alt="Gradient Map"></a> | **[Gradient Map](https://ittybitty.dev/shaders/gradient-map)**<br>Recolour an image, or any layer stack, through your gradient.<br>[`gradient-map.js`](shaders/gradient-map.js) · [example](examples/gradient-map.html) |
 | <a href="https://ittybitty.dev/shaders/afterimage"><img src="https://ittybitty.dev/og/afterimage.jpg" width="240" alt="Afterimage"></a> | **[Afterimage](https://ittybitty.dev/shaders/afterimage)**<br>Turns a photo into a long-exposure dream: smeared, ghosted, cooled, burning and grainy.<br>[`afterimage.js`](shaders/afterimage.js) · [example](examples/afterimage.html) |
+| <a href="https://ittybitty.dev/shaders/dusk"><img src="https://ittybitty.dev/og/dusk.jpg" width="240" alt="Dusk"></a> | **[Dusk](https://ittybitty.dev/shaders/dusk)**<br>Turns a photo into a blue-hour memory: out of focus, glowing, hazy and grainy.<br>[`dusk.js`](shaders/dusk.js) · [example](examples/dusk.html) |
 | <a href="https://ittybitty.dev/shaders/glow"><img src="https://ittybitty.dev/og/glow.jpg" width="240" alt="Glow"></a> | **[Glow](https://ittybitty.dev/shaders/glow)**<br>Two soft lights drifting behind cards, product shots and pricing tables.<br>[`glow.js`](shaders/glow.js) · [example](examples/glow.html) |
 | <a href="https://ittybitty.dev/shaders/dither-light"><img src="https://ittybitty.dev/og/dither-light.jpg" width="240" alt="Dither Light"></a> | **[Dither Light](https://ittybitty.dev/shaders/dither-light)**<br>A 1-bit torch that follows your pointer across a dark surface.<br>[`dither-light.js`](shaders/dither-light.js) · [example](examples/dither-light.html) |
 | <a href="https://ittybitty.dev/shaders/dither-haze"><img src="https://ittybitty.dev/og/dither-haze.jpg" width="240" alt="Dither Haze"></a> | **[Dither Haze](https://ittybitty.dev/shaders/dither-haze)**<br>A drifting haze of dithered ink for plain page backgrounds.<br>[`dither-haze.js`](shaders/dither-haze.js) · [example](examples/dither-haze.html) |
@@ -112,7 +113,7 @@ There's a bare page for each shader in [`examples/`](examples). Browsers won't l
 
 ## Changelog
 
-The latest release is **v2026.11.07**. Every release is listed in [CHANGELOG.md](CHANGELOG.md).
+The latest release is **v2026.11.09**. Every release is listed in [CHANGELOG.md](CHANGELOG.md).
 
 ## Licence
 

@@ -1,9 +1,10 @@
 {
-  "version": "v2026.11.07",
-  "latest": "Afterimage added",
+  "version": "v2026.11.09",
+  "latest": "Dusk added",
   "releases": [
     "v2026.10.28",
-    "v2026.11.07"
+    "v2026.11.07",
+    "v2026.11.09"
   ],
   "files": {
     "shaders/afterimage.js": "786a1eefbc6012c8",
@@ -27,6 +28,7 @@
     "shaders/dither-light.js": "9ff03fee6cf7307b",
     "shaders/dot-field.js": "b89b77d7c5a89ba4",
     "shaders/drop-ripple.js": "dfa486b5a9ec8590",
+    "shaders/dusk.js": "1ed7b3d4356602ab",
     "shaders/edge-glow.js": "64edd7212727c005",
     "shaders/electric-border.js": "51f328e0df5d78e0",
     "shaders/engraving.js": "acea0dfe019f416b",
